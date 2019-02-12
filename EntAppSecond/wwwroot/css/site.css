@@ -17,3 +17,7 @@ body {
     background-color:lightblue;
     border: solid;
 }
+
+.form-control:focus{
+    border-color:red;
+}
