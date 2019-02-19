@@ -21,3 +21,14 @@ body {
 .form-control:focus{
     border-color:red;
 }
+
+.field-validation-error{
+    color:red;
+    border:double 2px;
+    font:bold;
+}
+
+.validation-summary-errors{
+    color:forestgreen;
+    border: solid blue 1px;
+}

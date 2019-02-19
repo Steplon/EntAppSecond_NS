@@ -1,0 +1,58 @@
+﻿@page
+@model EntAppSecond_NS.Pages.FormWSModel
+@{
+    ViewData["Title"] = "FormWS";
+}
+
+<h2>FormWS</h2>
+
+@*An input element for a string with the label Product Code.
+    A set of radio buttons with the following choices: Red, Yellow, Black.
+    A checkboxes with the following:
+    I consent to everything.
+    A submit Button.*@
+
+<form method="post">
+    <div class="form-group">
+        <div class="form-group">
+            <label asp-for="ProductCode"></label>
+            <input asp-for="ProductCode" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-12">Select your colour</div>
+            <div class="radio">
+                <label for="Red">
+                    <input value="Red" type="radio" asp-for="ColorSelected" id="Red" />Red
+                </label>
+            </div>
+
+            <div class="radio">
+                <label for="Yellow">
+                    <input value="Yellow" type="radio" asp-for="ColorSelected" id="Yellow" />Yellow
+                </label>
+            </div>
+
+            <div class="radio">
+
+                <label for="Black">
+                    <input value="Black" type="radio" asp-for="ColorSelected" id="Black" />Black
+                </label>
+            </div>
+
+
+
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Consented">Do you consent?</label>
+            <input asp-for="Consented" type="checkbox" class="checkbox" />
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn-primary">Submit</button>
+        </div>
+
+    </div>
+
+</form>
