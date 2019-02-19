@@ -10,6 +10,7 @@ namespace EntAppSecond_NS.Pages.Students
 {
     public class CreateModel : PageModel
     {
+        public string Message { get; set; }
 
         [BindProperty]
         public Student Student { get; set; }
@@ -17,6 +18,20 @@ namespace EntAppSecond_NS.Pages.Students
         public void OnGet()
         {
 
+        }
+
+        public void OnPost()
+        {
+            Message = "Hello server, ";
+
+            if (ModelState.IsValid)
+            {
+                Message += "all is well";
+            }
+            else
+            {
+                Message += "we are in trouble";
+            }
         }
     }
 }
