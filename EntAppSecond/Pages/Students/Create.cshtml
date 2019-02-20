@@ -23,11 +23,36 @@
         <input asp-for=Student.StudentID />
     </div>
 
+    <div>
+        <label asp-for=Student.DOB></label>
+        <input asp-for=Student.DOB />
+    </div>
+
+    <div>
+        <label asp-for=Student.NumModules></label>
+        <input asp-for=Student.NumModules />
+    </div>
+
+    <div>
+        <label asp-for=Student.Height></label>
+        <input asp-for=Student.Height />
+    </div>
+
+
+    <div>
+        <label asp-for=Student.Email></label>
+        <input asp-for=Student.Email />
+    </div>
+
+
+    <div>
+        <label asp-for=Student.EmailConfirm></label>
+        <input asp-for=Student.EmailConfirm />
+    </div>
+
     <button type="submit">Press Me</button>
 
     <div asp-validation-summary="All"></div>
-
-    <span asp-validation-for="Student.StudentID"></span>
 
 </form>
 
