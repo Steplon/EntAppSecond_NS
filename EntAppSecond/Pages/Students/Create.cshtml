@@ -1,5 +1,5 @@
 ﻿@page
-@model EntAppSecond_NS.Pages.Students.CreateModel
+@model EntAppSecond_NS.Pages.Students.CreateStudentModel
 @{
     ViewData["Title"] = "Create";
 }
@@ -23,12 +23,12 @@
         <input asp-for=Student.StudentID />
     </div>
 
-    <div>
+    @*<div>
         <label asp-for=Student.DOB></label>
         <input asp-for=Student.DOB />
-    </div>
+    </div>*@
 
-    <div>
+    @*<div>
         <label asp-for=Student.NumModules></label>
         <input asp-for=Student.NumModules />
     </div>
@@ -36,10 +36,10 @@
     <div>
         <label asp-for=Student.Height></label>
         <input asp-for=Student.Height />
-    </div>
+    </div>*@
 
 
-    <div>
+    @*<div>
         <label asp-for=Student.Email></label>
         <input asp-for=Student.Email />
     </div>
@@ -47,13 +47,11 @@
 
     <div>
         <label asp-for=Student.EmailConfirm></label>
-        <input asp-for=Student.EmailConfirm />
-    </div>
+        <input asp-for=Student.EmailConfirm />*@
+    @*</div>*@
 
     <button type="submit">Press Me</button>
 
     <div asp-validation-summary="All"></div>
 
 </form>
-
-@Model.Message
